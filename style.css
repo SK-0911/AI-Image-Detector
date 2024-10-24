@@ -240,6 +240,54 @@ button:hover{
     color: red;
 }
 
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #00aaff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #d5524e;
+}
+
+/* Responsive Styles for footer */
+@media (max-width: 768px) {
+    .footer-links {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .footer-links a {
+        margin: 5px 0;
+    }
+}
+
+@media (min-width: 769px) {
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+
+    .footer-links {
+        margin: 2px;
+    }
+}
+
+
 @media screen and (max-width: 1350px) {
     .colors-container .results .result-item p span{
         display: none;
