@@ -1,0 +1,4 @@
+const config = {
+    IMAGGA_API_KEY : "acc_c585216c94012ca",
+    IMAGGA_API_SECRET : "73a61282b5c920e57891c111089531bb"
+};
