@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Imagely</title>
+</head>
+<body>
+    
+    <h1>IMAGELY</h1>
+
+    <div class="wrapper">
+        <div class="upload-container">
+            <h3>Upload Your Image</h3>
+            <div class="buttons">
+                <input type="file" id="imgInput" accept="image/*"
+                style="display: none;">
+                <button class="file-input" onclick="document.getElementById('imgInput').click()">
+                    Choose File
+                </button>
+                <button id="upload-btn">Analyze Image</button>
+            </div>
+            <img src="not-found.jpg" id="img-preview">
+        </div>
+
+        <div class="colors-container">
+            <p class="error">Nothing to show...</p>
+        </div>
+    </div>
+
+    <div class="tags-container">
+        <h3>Image Data</h3>
+        <p class="error">Nothing to show...</p>
+        <div class="results"></div>
+        <div class="buttons">
+            <button id="see-more" style="display: none;">See More</button>
+            <button id="export-tags" style="display: none;">Export Tags</button>
+        </div>
+    </div>
+
+    <div id="upload-modal" class="modal">
+        <div class="modal-content">
+            <h1>Uploading Image...</h1>
+            <div class="progress-bar">
+                <div id="upload-progress"class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
